@@ -3,7 +3,7 @@ const amqp = require("amqplib/callback_api");
 require('dotenv').config();
 
 
-import ResponseModel from "../ex3-ms-dtos/responseModel";
+import ResponseModel from './responseModel';
 import Exchange from "./exchanges";
 
 
