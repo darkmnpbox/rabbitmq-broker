@@ -22,7 +22,7 @@ export class Broker {
     private static instance: Broker;
     private queueURLMap: { [id: string]: QueueURLMapValue } = {};
     private channel = null;
-    private rabbitmqUrl: string = process.env.BROKER_URL || `amqp://127.0.0.1:5762`;
+    private rabbitmqUrl: string = process.env.BROKER_URL || `amqp://127.0.0.1:5672`;
     private topicNames: string[] = [];
 
     private constructor() {
